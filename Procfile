@@ -1,0 +1,1 @@
+web: java -jar target/filemanager.jar server config.yml

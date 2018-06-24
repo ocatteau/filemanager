@@ -1,0 +1,1 @@
+create sequence auto_seq INCREMENT BY 50;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/upload.js"></script>
+</head>
+<body>
+<div class="top">
+    <div class="user">Logged in as {{currentUser}}</div>
+</div>
+<div class="container">
+    <row>
+        <div class="left-column">
+            <h3>Upload :</h3>
+            <div>
+                <form enctype="multipart/form-data" method="POST" action="./upload">
+                    <input type="file" id="fileUpload" name="file"/>
+                    <input type="hidden" id="fileName" name="fileName"/>
+                </form>
+                <ul id="messages"></ul>
+            </div>
+        </div>
+        <div class="right-column">
+            <h3>Files :</h3>
+            <ul id="managedFiles">
+                {{#managedFiles}}
+                    <li><a href="./file/{{id}}">{{filename}}</a></li>
+                {{/managedFiles}}
+            </ul>
+        </div>
+    </row>
+</div>
+</body>
+</html>
