@@ -87,7 +87,7 @@
                 <version>2.3</version>
                 <configuration>
                     <createDependencyReducedPom>true</createDependencyReducedPom>
-                    <finalName>filemmanager</finalName>
+                    <finalName>filemanager</finalName>
                     <filters>
                         <filter>
                             <artifact>*:*</artifact>
