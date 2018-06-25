@@ -19,7 +19,7 @@ public class EncryptionManagerTest {
 	@Before
 	public void setUp() throws Exception {
 		encryptionManager = new EncryptionManager("This is a secret");
-		inputFile = new File(encryptionManager.getClass().getResource("/fr/ocatteau/resources/text.txt").toURI());
+		inputFile = new File(getClass().getResource("/text.txt").toURI());
 		encryptedFile = new File(inputFile.getParent(), "encrypted.txt");
 		decryptedFile = new File(inputFile.getParent(), "decrypted.txt");
 	}
